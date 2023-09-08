@@ -1,6 +1,7 @@
 #include <stdio.h>
- /**
-  * main- this is the main function
+
+/**
+  * main - Entry point
   * Return: 0 (success)
   */
 
