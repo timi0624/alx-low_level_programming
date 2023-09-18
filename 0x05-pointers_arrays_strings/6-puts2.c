@@ -1,19 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-*main - putchar printing
-*
-*Return: Always 0 (Success)
+ * puts2 - prints one character out
+ * followed by a new line down
+ * @str: string to print the chars from
  */
-int main(void)
+void puts2(char *str)
 {
-	int i;
-	int numbers[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int len = 0, s = 0;
 
-	for (i = 0; i < 10; i++)
+	while (str[len] != '\0')
 	{
-	putchar('0' + numbers[i]);
+		len++;
 	}
-	putchar('\n');
-return (0);
+	while (s < len)
+	{
+		_putchar(str[s]);
+		s += 2;
+	}
+	_putchar('\n');
 }
